@@ -1,0 +1,40 @@
+{
+    "name": "danielsundermeier/laravel-deploy",
+    "description": "Description.",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Sundermeier",
+            "email": "packages@d15r.de"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "D15r\\Deployment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "D15r\\Deployment\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "D15r\\Deployment\\DeploymentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
